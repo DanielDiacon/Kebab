@@ -1,0 +1,173 @@
+// import fonts/font <========================================>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&family=Roboto:wght@900&display=swap');
+//<=>
+
+// import fonts/font <========================================>
+// if need to import local fonts
+//@import "fonts/fonts";
+//<=>
+
+// default font / default font size <=========================>
+$fontFamily: 'Roboto', sans-serif;
+
+$fontSize: 16px;
+//<=>
+
+// base colors <==============================================>
+$trasCube:.73,-0.01,.25,1.3;
+//<=>
+
+// base colors <==============================================>
+:root{
+--black: #1E1E1E;
+--white: #eeeeee;
+--col1:#DFBA59 ;
+--col2:#DFBA59 ;
+--arrow_l:url("../icons/left_arrow.png") ;
+--arrow_r:url("../icons/right_arrow.png") ;
+}
+//<=>
+
+// max width for container <==================================>
+$maxWidthContainer: 1250;
+//<=>
+
+// null style <===============================================>
+@import '_null.scss';
+//<=>
+
+// general style <============================================>
+body{
+   //back ground
+   background:  url("../img/news_bg.jpg") ;
+   background-repeat: repeat;
+   background-size: 1000px 1000px;
+   //main font family
+   font-family: $fontFamily;
+   //main font size
+   font-size:$fontSize;
+   //main font width
+   font-weight: 500;
+   //scroll block when open burger
+   .lock & {
+      overflow: hidden;
+      touch-action: none;
+   }
+}
+//<=>
+
+// title style <==============================================>
+.title{
+   color: var(--white);
+   text-align: center;
+   font-size: calc(18px + 22 * (100vw / $maxWidthContainer));
+   padding: 25px;
+}
+//<=>
+
+// wrapper <==================================================>
+.wrapper{
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+}
+//<=>
+
+// container <================================================>
+.container{
+   max-width: $maxWidthContainer + px;
+   
+   margin: 0 auto;
+   //fix for slider
+   > * {
+      min-width: 0;
+   }
+}
+//<=>
+
+// the footer to the bottom of the page <=====================>
+main{
+   //heaeder space 
+   flex: 1 1 auto;
+}
+//<=>
+
+// scroll bar <===============================================>
+::-webkit-scrollbar{
+   display: none;
+}
+//<=>
+
+
+
+//header <====================================================>
+@import '_header.scss';
+//<=>
+
+//footer <====================================================>
+@import '_intro.scss';
+//<=>
+
+//footer <====================================================>
+@import '_gridItem.scss';
+//<=>
+
+//footer <====================================================>
+@import '_dream.scss';
+//<=>
+
+//footer <====================================================>
+@import '_beverages.scss';
+//<=>
+
+//footer <====================================================>
+@import '_starters.scss';
+//<=>
+
+//footer <====================================================>
+@import '_dessert.scss';
+//<=>
+
+//footer <====================================================>
+@import '_phrase.scss';
+//<=>
+
+//footer <====================================================>
+@import '_footer.scss';
+//<=>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
