@@ -55,15 +55,17 @@
       width: auto;
       height: 60px;
    }
+   &__icons{
+      z-index: 4;
+   }
 	&__item_big {
-      z-index: 3;
       height:100%;
       padding: 0 15px;
       display: flex;
       gap: 5px;
       align-self: center;
       justify-content: center;
-      background: linear-gradient(45deg , var(--col1) , var(--col2));
+      background:var(--col1);
 	}
 	&__button {
       display: flex;

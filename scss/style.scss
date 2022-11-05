@@ -22,9 +22,6 @@ $trasCube:.73,-0.01,.25,1.3;
 --black: #1E1E1E;
 --white: #eeeeee;
 --col1:#DFBA59 ;
---col2:#DFBA59 ;
---arrow_l:url("../icons/left_arrow.png") ;
---arrow_r:url("../icons/right_arrow.png") ;
 }
 //<=>
 
@@ -38,10 +35,6 @@ $maxWidthContainer: 1250;
 
 // general style <============================================>
 body{
-   //back ground
-   background:  url("../img/news_bg.jpg") ;
-   background-repeat: repeat;
-   background-size: 1000px 1000px;
    //main font family
    font-family: $fontFamily;
    //main font size
@@ -88,6 +81,9 @@ body{
 
 // the footer to the bottom of the page <=====================>
 main{
+   
+   //back ground
+   background:  var(--black) ;
    //heaeder space 
    flex: 1 1 auto;
 }

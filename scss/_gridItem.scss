@@ -3,8 +3,7 @@
    display: grid;
    grid-auto-flow: row;
    grid-template: auto 50px / 1fr;
-   background-color: rgba($color: #262626, $alpha: 0.6);
-   backdrop-filter: blur(5px);
+   background:  var(--black) ;
    border: 1px solid rgba($color: #eee, $alpha: 0.2);
    &__img {
       transition: .3s;
@@ -40,8 +39,7 @@
       gap: 5px;
       padding: 5px;
       border-radius: 10px;
-      background-color: rgba($color: #262626, $alpha: 0.6);
-      backdrop-filter: blur(5px);
+      background:  var(--black) ;
       position: absolute;
       top: 5px;
       right: 5px;
